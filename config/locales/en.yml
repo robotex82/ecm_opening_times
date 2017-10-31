@@ -1,0 +1,39 @@
+en:
+  activerecord:
+    models:
+      ecm/opening_times/branch:
+        one: Branch
+        other: Branches
+      ecm/opening_times/entry:
+        one: Entry
+        other: Entries
+    attributes:
+      ecm/opening_times/branch:
+        name: Name
+        identifier: Identifier
+        position: Position
+        created_at: Created at
+        updated_at: Updated at
+      ecm/opening_times/entry:
+        branch: Branch
+        branch_id: Branch
+        monday: Monday
+        tuesday: Tuesday
+        wednesday: Wednesday
+        thursday: Thursday
+        friday: Friday
+        saturday: Saturday
+        sunday: Sunday
+        open_at: Open at
+        close_at: Close at
+        created_at: Created at
+        updated_at: Updated at
+  classes:
+    ecm/opening_times/engine: Opening times  
+  routes:
+    ecm_opening_times_engine: opening-times
+  ecm:
+    opening_times:
+      pages:
+        branches:
+          index: Opening Times

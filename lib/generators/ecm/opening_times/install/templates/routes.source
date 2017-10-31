@@ -1,0 +1,2 @@
+  
+  mount Ecm::OpeningTimes::Engine, at: '/'

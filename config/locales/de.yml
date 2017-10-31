@@ -1,0 +1,39 @@
+de:
+  activerecord:
+    models:
+      ecm/opening_times/branch:
+        one: Filiale
+        other: Filialen
+      ecm/opening_times/entry:
+        one: Eintrag
+        other: Einträge
+    attributes:
+      ecm/opening_times/branch:
+        name: Name
+        identifier: Bezeichner
+        position: Position
+        created_at: Erstellt am
+        updated_at: Aktualisiert am
+      ecm/opening_times/entry:
+        branch: Filiale
+        branch_id: Filiale
+        monday: Montag
+        tuesday: Dienstag
+        wednesday: Mittwoch
+        thursday: Donnerstag
+        friday: Freitag
+        saturday: Samstag
+        sunday: Sonntag
+        open_at: Geöffnet von
+        close_at: Geöffnet bis
+        created_at: Erstellt am
+        updated_at: Aktualisiert am
+  classes:
+    ecm/opening_times/engine: Öffnungszeiten
+  routes:
+    ecm_opening_times_engine: oeffnungszeiten
+  ecm:
+    opening_times:
+      pages:
+        branches:
+          index: Öffnungszeiten

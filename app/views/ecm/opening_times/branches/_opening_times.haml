@@ -1,0 +1,5 @@
+.opening-times
+  %h4= t('classes.ecm/opening_times/engine')
+  - branches.each do |branch|
+    %span= branch.name
+    = render 'ecm/opening_times/branches/opening_times_for_branch', branch: branch, weekday_format: :abbr_day_names
