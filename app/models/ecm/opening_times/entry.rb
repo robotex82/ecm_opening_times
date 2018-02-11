@@ -69,6 +69,10 @@ module Ecm::OpeningTimes
         open_all_day
       end
 
+      def human
+        "#{branch.name}: #{open_at} - #{close_at}"
+      end
+
       private
 
       def _time_to_minutes_since_midnight(hours, minutes)
